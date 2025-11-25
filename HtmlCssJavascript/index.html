@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify - web Player:music for eyerone</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="icon-spotify.png" type="images/png" href="icon-spotify">
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left">
+            <div class="home bg-grey rounded m-1">
+                <div class="logo"><img class="invert" src="logo2.svg" alt=" Spotify Logo">
+                </div>
+                <ul>
+                    <li><img class="invert" src="home.svg" alt="Home"> Home</li>
+                    <li><img class="invert" src="find.png" alt="search">search</li>
+                </ul>
+            </div>
+
+            <div class="library bg-grey rounded m-1">
+                <h2>
+                    Your library
+                </h2>
+                <div class="my-playlist">
+                    <div class="playlist-item" data-playlist-id="myFav">
+                        My Fav Song
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <a href="https://www.spotify.com/legal/" target="_blank">Legal</a>
+                <a href="https://www.spotify.com/legal/privacy-policy/" target="_blank">Privacy Policy</a>
+                <a href="https://www.spotify.com/legal/cookies-policy/" target="_blank">Cookies</a>
+            </div>
+        </div>
+
+        <div class="right bg-grey rounded">
+            <div class="header">
+                <div class="nav">
+                    <img class="nav-icon" src="left.svg.svg" alt="left arrow">
+                    <img class="nav-icon" src="right.svg.svg" alt="right arrow">
+                </div>
+                <div class="buttons">
+                    <button class="signupbtn">Signup</button>
+                    <button class="loginbtn">Login</button>
+                </div>
+            </div>
+            <div class="Spotify-playlists">
+                <h1>my favourites</h1>
+                <div class="cardContainer">
+                    <div class="card">
+                        <div class="play-button">
+                            <svg id="play-btn-0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="black">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </div>
+
+                        <img src="img-01.jpeg" alt="">
+                        <h2> ALL THE STARS </h2>
+                        <p>dedcated to chadiwak !</p>
+                    </div>
+                    <div class="card">
+                        <div class="play-button">
+                            <svg id="play-btn-1" xmlns="http://www.w3.org/2000/svg" width="25" height="25" viewBox="0 0 24 24" fill="black">
+                                <path d="M8 5v14l11-7z" />
+                            </svg>
+                        </div>
+                        <img src="img-2.avif" alt="">
+                        <h2> BIG DAWGS</h2>
+                        <p>by indian rapper</p>
+                    </div>
+                </div>
+                <div class="playbar">
+                    <div class="songinfo"></div>
+                    <div class="songsButton">
+                        <img id="leftBtn" src="previous-button.png" alt="Previous">
+                        <img id="playBtn" src="play-button.png" alt="Play">
+                        <img id="rightBtn" src="next-button.png" alt="Next">
+                    </div>
+                    <div class="songtime">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <audio id="audioPlayer" src=""></audio>
+    <script src="script.js"></script>
+</body>
+</html>

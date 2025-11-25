@@ -1,0 +1,30 @@
+.border{
+    border: 2px solid red  ;
+    margin: 3px;
+}
+.flex{
+    display: flex;
+}
+.justfy-center{
+    justify-content: center;
+}
+.items-center{
+    align-items: center;
+}
+.bg-black{
+    background-color: black;
+    color: white;
+}
+.library{
+    height: 200px;
+    padding: 10px;
+}
+.bg-grey{
+    background-color:  #121212;;
+}
+.rounded{
+    border-radius: 7px;
+}
+.m-1{
+    margin: 5px;
+}

@@ -1,0 +1,227 @@
+*{
+    padding: 0;
+    margin: -1px;
+}
+
+body{
+    background-color: black;
+    color: white; 
+} 
+.left{
+    width:25vw ;
+}
+.right{
+    width: 100vw;
+    margin: 9px ;
+    position: relative;
+}
+.home ul li {
+    width: 15px;
+    height: 28px;
+    margin-right: 10px;
+    vertical-align: middle;
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    padding-top: 14px;
+    font-weight: bold;
+}
+.logo img{
+    width: 180px;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+.invert{
+    filter: invert(1);
+}
+.library{
+    min-height: 34vw;
+    position: relative;
+}
+.footer{
+    font-size: 17px;
+    color:grey;
+    position: absolute;
+    gap: 12px;
+  
+}
+.fotter a{
+    text-decoration: none;
+    color:lightgray;
+}
+.footer a:hover {
+    text-decoration: underline;
+    color: lightgrey;
+}
+.nav img{
+    filter: invert(1);
+    height: 25px;
+    color: white;
+    position:relative;
+}
+.nav-icon {
+    filter: invert(1);
+    height: 25px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color:rgb(34, 34, 34);
+}
+.header > *{
+    padding: 10px;
+}
+.Spotifyplaylists{
+    padding: 51px;
+}
+.cardContainer {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    /* overflow: scroll;
+    max-height: 80vh; */
+}
+.Spotifyplaylists .card{
+    background-color: #181818;
+    padding: 200px; 
+}
+.card img{
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+}
+.card {
+    position: relative;
+    background-color: #282424;
+    border-radius: 10px;
+    color: white;
+    object-fit: contain;
+    overflow: hidden;
+    width: 200px;
+}
+ .play-button {
+  width:50px;
+  height:30px;
+  right: 33px;
+  background-color: #1db954; 
+  display: flex;
+  border-radius: 20%;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(29, 185, 84, 0.3);
+  position: absolute;
+  bottom: 50px;
+  right: 2px;
+}
+
+.play-button:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 20px rgba(29, 185, 84, 0.6);
+  background-color: #1ed760;
+}
+
+.play-button svg {
+  transition: fill 0.3s ease;
+}
+
+.play-button:hover svg {
+  fill: rgb(255, 255, 255);
+}
+.signupbtn {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    border-radius: 100px;
+    border: 2px solid white;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.signupbtn:hover {
+    background-color: white;
+    color: black;
+    transform: scale(1.0);
+}
+
+.loginbtn {
+    background-color: #1db954;  /* Spotify Green */
+    color: black;
+    font-weight: bold;
+    border-radius: 100px;
+    border: none;
+    padding: 10px 22px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.loginbtn:hover {
+    background-color: #1ed760;  
+    transform: scale(1.05);
+}
+.playbar{
+    position: absolute;
+    bottom: 0;
+    background-color: rgb(254, 254, 254);
+    width: 100%;
+    height: 25px;
+    padding: 12px;
+    color: black;
+}
+ .playbar {
+    background-color:rgb(0, 0, 0);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.songsButton {
+    display:flex;
+    align-items: center;
+    gap: 25px;  
+}
+
+.songsButton img {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    transition: transform 0.1s ease;
+    filter: invert(1);
+}
+
+.songsButton img:hover {
+    transform: scale(1.2);
+}
+.playbar {
+    box-shadow: 0 -4px 10px rgba(0, 0, 0, 0.6);
+}
+
+
+@media(max-width:500px){
+    .card{
+        width: auto;
+    }
+    .header>*{
+        padding:2px ;
+    }
+    .buttons>*{
+        margin: 0 6px;
+    }
+    .cardContainer{
+        max-height: 50vh;
+    }
+
+}
+
+
